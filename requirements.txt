@@ -1,0 +1,13 @@
+fastapi
+uvicorn[standard]
+pydantic
+python-dotenv
+google-generativeai
+langchain-google-genai
+langchain
+chromadb
+sentence-transformers
+python-multipart
+# jira
+# langchain-community
+# atlassian-python-api

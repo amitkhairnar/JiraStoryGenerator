@@ -1,0 +1,17 @@
+# ==============================================================================
+# File: mock_data/api_docs.txt
+# ==============================================================================
+"""
+# API Documentation: Authentication Service v2.1
+
+Endpoint: /api/v2/auth/login
+Method: POST
+Body: { "email": "user@example.com", "password": "user_password" }
+Success Response (200 OK): { "token": "jwt_auth_token", "userId": "user-123" }
+Error Response (401 Unauthorized): { "error": "Invalid credentials" }
+
+Endpoint: /api/v2/auth/logout
+Method: POST
+Headers: { "Authorization": "Bearer jwt_auth_token" }
+Success Response (204 No Content)
+"""

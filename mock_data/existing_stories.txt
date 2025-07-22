@@ -1,0 +1,20 @@
+# ==============================================================================
+# File: mock_data/existing_stories.txt
+# ==============================================================================
+"""
+# Example of a well-written past story
+
+Title: User Profile - Add Avatar Upload Functionality
+
+User Story:
+As a registered user, I want to upload and change my profile avatar so that I can personalize my account identity.
+
+Acceptance Criteria:
+- Given I am on my profile page, when I click on the default avatar, then a file selection dialog should open.
+- Given I have selected a valid image file (JPG, PNG) under 5MB, when I confirm the selection, then the image should be uploaded and displayed as my new avatar.
+- Given the upload is in progress, a loading indicator should be shown over the avatar.
+- Given I select an invalid file type or a file larger than 5MB, an error message "Invalid file. Please select a JPG or PNG under 5MB." should be displayed.
+- Given the upload fails for a network reason, an error message "Upload failed. Please try again." should be displayed.
+
+Story Points: 5
+"""

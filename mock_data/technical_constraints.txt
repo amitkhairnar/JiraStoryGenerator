@@ -1,0 +1,7 @@
+# Technical Constraints & Guidelines
+
+- All new backend endpoints must be developed using Python and the FastAPI framework.
+- The primary database is PostgreSQL. Use SQLAlchemy for database interactions.
+- The frontend is built with React and the "Starlight" design system components.
+- All user-facing text must be internationalized (i18n-ready).
+- All new features must include unit tests with at least 80% code coverage.

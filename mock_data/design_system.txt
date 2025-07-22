@@ -1,0 +1,23 @@
+# ==============================================================================
+# File: mock_data/design_system.txt
+# ==============================================================================
+"""
+# Design System: Component Library "Starlight"
+
+Component: Primary Button
+CSS Class: .btn-primary
+Color: #0052CC
+Hover State: #0065FF
+Usage: For primary actions like 'Submit', 'Create', or 'Save'.
+
+Component: Secondary Button
+CSS Class: .btn-secondary
+Color: #F4F5F7 (background), #42526E (text)
+Usage: For secondary actions like 'Cancel' or 'Close'.
+
+Component: Input Field
+CSS Class: .input-field
+Border: 1px solid #DFE1E6
+Focus State: Border color changes to #0052CC.
+Should have an associated <label> element for accessibility.
+"""

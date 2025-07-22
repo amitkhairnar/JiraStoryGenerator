@@ -1,0 +1,16 @@
+# User Personas
+
+Persona: Project Manager (Admin User)
+- Needs: To see project status, budget, and timelines at a glance.
+- Goals: Ensure projects are delivered on time and within budget.
+- Technical Skills: Low. Prefers simple interfaces and clear dashboards.
+
+Persona: Standard User (Team Member)
+- Needs: To view assigned tasks, update their status, and collaborate with team members.
+- Goals: Complete their work efficiently.
+- Technical Skills: Varies. Generally comfortable with standard web applications.
+
+Persona: Unregistered Visitor
+- Needs: To understand what the product does and how to sign up.
+- Goals: Evaluate the service and create an account if interested.
+- Technical Skills: N/A.
