@@ -1,19 +1,16 @@
 
-# Admin - Create New User Page with Backend Integration
+# API - Implement File Download Endpoint
 
-**Story Points:** 8
+**Story Points:** 5
 
 ---
 
 ## User Story
-As an Administrator, I want to create a new user account via a dedicated page so that I can efficiently onboard new members to the platform.
+As an API consumer, I want to call a dedicated endpoint to download a file so that I can retrieve stored assets from the server.
 
 ## Acceptance Criteria
-- Given I am an authenticated Administrator, when I navigate to the user management section, then I should see an option to 'Create New User'.
-- Given I am on the 'Create New User' page, the form must contain input fields for First Name, Last Name, and Email Address, using 'Starlight' design system components.
-- Given I have filled out the form with valid data, when I click the 'Create' button, then a POST request is sent to a new FastAPI endpoint (`/api/v1/users`).
-- Given the user is created successfully in the PostgreSQL database via SQLAlchemy, then I should be redirected to the user list and see a success confirmation message.
-- Given I attempt to create a user with an email that already exists, then the API should return an error and a user-friendly message should be displayed on the form.
-- Given I submit the form with invalid or missing data (e.g., empty email), then inline validation errors should be displayed next to the respective fields.
-- All user-facing text on the page (labels, buttons, messages) must be internationalized (i18n-ready).
-- Unit tests for the new frontend components and the backend endpoint must achieve at least 80% code coverage.
+- Given a new GET endpoint is created, for example `/download/{file_id}` or `/download/{filename}`.
+- When a GET request is made to the endpoint with a valid file identifier, then the server should respond with the file stream and a `200 OK` status.
+- Given a successful file retrieval, the response headers must include `Content-Type` appropriate for the file and `Content-Disposition: attachment; filename="..."` to trigger a browser download.
+- When a GET request is made for a file that does not exist, then the server must respond with a `404 Not Found` status code.
+- Given the existing `/files/` upload endpoint requires a `token`, when a download request is made without a valid token, then the server should respond with a `401 Unauthorized` status code.

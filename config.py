@@ -10,6 +10,9 @@ load_dotenv()
 # Google AI
 GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY")
 
+raw_urls = os.getenv("GITHUB_REPO_URLS", "")
+GITHUB_REPO_URLS = [url.strip() for url in raw_urls.split(',') if url.strip()]
+
 # Jira (Credentials are no longer used but kept for potential future use)
 JIRA_SERVER = os.getenv("JIRA_SERVER")
 JIRA_USER_EMAIL = os.getenv("JIRA_USER_EMAIL")

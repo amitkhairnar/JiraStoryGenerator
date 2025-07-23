@@ -10,7 +10,7 @@ from orchestration_service import process_new_story_request
 import os
 
 app = FastAPI(
-    title="AI Jira Story Generator (Offline)",
+    title="AI Jira Story Generator",
     description="Takes a one-liner prompt and creates a detailed story in a local file.",
     version="1.3.0"
 )

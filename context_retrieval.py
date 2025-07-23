@@ -4,7 +4,10 @@
 # ==============================================================================
 import chromadb
 from langchain_huggingface import HuggingFaceEmbeddings
-from langchain.vectorstores import Chroma
+# New (recommended)
+from langchain_chroma import Chroma
+
+
 import config
 
 def retrieve_context(query: str, n_results: int = 3) -> str:

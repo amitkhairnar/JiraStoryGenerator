@@ -4,10 +4,14 @@ pydantic
 python-dotenv
 google-generativeai
 langchain-google-genai
+langchain-huggingface
 langchain
 chromadb
 sentence-transformers
 python-multipart
+GitPython
+langchain-chroma
+
 # jira
 # langchain-community
 # atlassian-python-api
